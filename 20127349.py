@@ -24,11 +24,11 @@ def extract(data):
         print(list[i])   
     
 def main():
-    filename = "test"
-    data=""
+    filename = input("Input filename: ")
+    data = ""
 
     #read
-    with open(filename+".txt",encoding='utf8') as file:
+    with open(filename,encoding='utf8') as file:
         for line in file:
             if not line.isspace():
                 data+=line
